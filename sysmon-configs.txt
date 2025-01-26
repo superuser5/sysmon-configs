@@ -1,0 +1,19 @@
+
+# default
+# This is the balanced configuration, most used, more information https://github.com/olafhartong/sysmon-modular/wiki/Configuration-options#generating-the-default-configuration
+# https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/sysmonconfig-with-filedelete.xml
+
+# verbose
+# This is the very verbose configuration, all events are included, only the exclusion modules are applied. This should not be used in production without validation, will generate a significant amount of data and might impact performance. More information here https://github.com/olafhartong/sysmon-modular/wiki/Configuration-options#generating-custom-configs
+# https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/sysmonconfig-excludes-only.xml
+
+# super verbose
+# A configuration with extreme verbosity. The log volume expected from this file is significantly high, really DO NOT USE IN PRODUCTION! This config is only for research, this will use way more CPU/Memory. Only enable prior to running the to be investigated technique, when done load a lighter config.
+https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/sysmonconfig-research.xml
+
+# MDE augment
+# A configuration to augment Defender for Endpoint, intended to augment the information and have as little overlap as possible. This is based on the default/balanced config and will not generate all events for Sysmon, there are comments in the config. In the benefit of IR, consider using the excludes only config and only ingest the enriching events. (Blog with more rationale soon)
+# https://raw.githubusercontent.com/olafhartong/sysmon-modular/master/sysmonconfig-mde-augment.xml
+
+# This is a Microsoft Sysinternals Sysmon configuration file template with default high-quality event tracing.
+# https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/refs/heads/master/sysmonconfig-export.xml
